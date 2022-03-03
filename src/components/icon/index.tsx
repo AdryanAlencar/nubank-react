@@ -26,9 +26,9 @@ class RoundedIcon extends React.Component<IRoundedIconProps, IRoundedIconState>{
     }
 
     componentDidMount(){
-        var icon = this.props.icon == "user-icon" ? UserIcon : (this.props.icon == "help-icon" ? HelpIcon : (this.props.icon == "eye-icon" ? EyeIcon : (this.props.icon == "closed-eye-icon" ? ClosedEyeIcon : (this.props.icon == "add-letter-icon" ? AddLetterIcon : (this.props.icon == "next-icon" ? NextIcon : (this.props.icon == "pix-icon" ? PixIcon : (this.props.icon == "bar-code-icon" ? BarCodeIcon : (this.props.icon == "money-in-icon" ? MoneyInIcon : (this.props.icon == "money-out-icon" ? MoneyOutIcon : (this.props.icon == "money-dialog-icon" ? MoneyDialogIcon : (this.props.icon == "smart-phone-icon" ? SmartPhoneIcon : GlobeIcon)))))))))));
-        var size = this.props.size == "small" ? styles.small : (this.props.size == "medium" ? styles.medium : styles.large);
-        var color = this.props.color == "primary" ? styles.primary : (this.props.color == "secondary" ? styles.secondary : (this.props.color == "tertiary" ? styles.tertiary : (this.props.color == "quaternary" ? styles.quaternary : (this.props.color == "quinary" ? styles.quinary : styles.senary))));
+        var icon = this.props.icon === "user-icon" ? UserIcon : (this.props.icon === "help-icon" ? HelpIcon : (this.props.icon === "eye-icon" ? EyeIcon : (this.props.icon === "closed-eye-icon" ? ClosedEyeIcon : (this.props.icon === "add-letter-icon" ? AddLetterIcon : (this.props.icon === "next-icon" ? NextIcon : (this.props.icon === "pix-icon" ? PixIcon : (this.props.icon === "bar-code-icon" ? BarCodeIcon : (this.props.icon === "money-in-icon" ? MoneyInIcon : (this.props.icon === "money-out-icon" ? MoneyOutIcon : (this.props.icon === "money-dialog-icon" ? MoneyDialogIcon : (this.props.icon === "smart-phone-icon" ? SmartPhoneIcon : GlobeIcon)))))))))));
+        var size = this.props.size === "small" ? styles.small : (this.props.size === "medium" ? styles.medium : styles.large);
+        var color = this.props.color === "primary" ? styles.primary : (this.props.color === "secondary" ? styles.secondary : (this.props.color === "tertiary" ? styles.tertiary : (this.props.color === "quaternary" ? styles.quaternary : (this.props.color === "quinary" ? styles.quinary : styles.senary))));
 
         this.setState({
             icon: icon,
@@ -64,16 +64,16 @@ class SimpleIcon extends React.Component<ISimpleIconProps, ISimpleIconState>{
     constructor(props: ISimpleIconProps){
         super(props);
         this.state = {
-            icon: this.props.icon == "user-icon" ? UserIcon : HelpIcon,
+            icon: this.props.icon === "user-icon" ? UserIcon : HelpIcon,
             size: this.props.size ? this.props.size : "medium",
             color: this.props.color ? this.props.color : "primary"
         }
     }
 
     componentDidMount(){
-        var size = this.props.size == "small" ? styles.small : (this.props.size == "medium" ? styles.medium : styles.large);
-        var color = this.props.color == "primary" ? styles.primary : (this.props.color == "secondary" ? styles.secondary : (this.props.color == "tertiary" ? styles.tertiary : (this.props.color == "quaternary" ? styles.quaternary : (this.props.color == "quinary" ? styles.quinary : styles.senary))));
-        var icon = this.props.icon == "user-icon" ? UserIcon : (this.props.icon == "help-icon" ? HelpIcon : (this.props.icon == "eye-icon" ? EyeIcon : (this.props.icon == "closed-eye-icon" ? ClosedEyeIcon : (this.props.icon == "add-letter-icon" ? AddLetterIcon : NextIcon))));
+        var size = this.props.size === "small" ? styles.small : (this.props.size === "medium" ? styles.medium : styles.large);
+        var color = this.props.color === "primary" ? styles.primary : (this.props.color === "secondary" ? styles.secondary : (this.props.color === "tertiary" ? styles.tertiary : (this.props.color === "quaternary" ? styles.quaternary : (this.props.color === "quinary" ? styles.quinary : styles.senary))));
+        var icon = this.props.icon === "user-icon" ? UserIcon : (this.props.icon === "help-icon" ? HelpIcon : (this.props.icon === "eye-icon" ? EyeIcon : (this.props.icon === "closed-eye-icon" ? ClosedEyeIcon : (this.props.icon === "add-letter-icon" ? AddLetterIcon : NextIcon))));
 
         this.setState({
             size: size,

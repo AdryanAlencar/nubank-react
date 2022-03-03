@@ -2,7 +2,6 @@ import React from "react";
 import { Actions } from "../../components/actions";
 import { Ballance } from "../../components/ballance";
 import { Header } from "../../components/header";
-import styles from './styles.module.scss';
 
 const Home = () => {
     return (
