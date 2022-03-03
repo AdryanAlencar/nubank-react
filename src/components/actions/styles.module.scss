@@ -1,0 +1,41 @@
+.actions{
+
+    display: flex;
+    overflow-x: scroll;       
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+
+    .scroll{
+        display: grid;
+        grid-template-columns: repeat(6, minmax(75px, 1fr));
+        grid-template-rows: 100%;
+        grid-gap: 10px;
+        box-sizing: border-box;
+        padding: 0px 20px;         
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        .action{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 100%;
+
+            span{
+                text-align: center;
+                flex: 1;
+            }
+
+        }
+
+    }
+
+}
